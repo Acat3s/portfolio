@@ -1,18 +1,18 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector("form");
-    
-    form.addEventListener("submit", function(event) {
-        event.preventDefault();
-        
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
-        
-        if (name && email && message) {
-            alert("Merci " + name + " ! Votre message a été envoyé avec succès.");
-            form.reset();
-        } else {
-            alert("Veuillez remplir tous les champs.");
+// Animation de révélation des sections au défilement
+document.addEventListener("DOMContentLoaded", () => {
+    const reveals = document.querySelectorAll('.reveal');
+  
+    const revealOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
         }
+      });
+    }, { threshold: 0.2 });
+  
+    reveals.forEach(reveal => {
+      revealOnScroll.observe(reveal);
     });
-});
+  });
+  
