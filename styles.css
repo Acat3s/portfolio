@@ -40,12 +40,12 @@ nav a:hover {
   color: #fdbb2d;
 }
 
-/* Éviter que le contenu soit masqué par la barre de navigation */
+/* Éviter que le contenu ne soit masqué par la barre de navigation */
 .content {
   padding-top: 80px;
 }
 
-/* Section Projets / Contact */
+/* Conteneur général */
 .content {
   max-width: 800px;
   margin: 0 auto;
