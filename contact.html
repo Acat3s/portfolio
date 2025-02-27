@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mon Portfolio</title>
+  <title>Contact - Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Navigation identique sur toutes les pages -->
+  <!-- Navigation -->
   <nav>
     <ul>
       <li><a href="index.html">Projets</a></li>
@@ -18,10 +18,10 @@
   <!-- Section Contact -->
   <section class="content">
     <h2>Contact</h2>
-    <form action="#" method="post">
-      <input type="text" placeholder="Nom" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Votre message" required></textarea>
+    <form action="send.php" method="post">
+      <input type="text" name="name" placeholder="Nom" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Votre message" required></textarea>
       <button type="submit">Envoyer</button>
     </form>
   </section>
