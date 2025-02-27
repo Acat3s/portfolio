@@ -40,26 +40,12 @@ nav a:hover {
   color: #fdbb2d;
 }
 
-/* Pour éviter que le contenu ne soit masqué par la barre de navigation */
-.hero,
+/* Éviter que le contenu soit masqué par la barre de navigation */
 .content {
   padding-top: 80px;
 }
 
-/* Section Hero */
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-}
-.hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-.hero p {
-  font-size: 1.2em;
-}
-
-/* Section Contenu Général */
+/* Section Projets / Contact */
 .content {
   max-width: 800px;
   margin: 0 auto;
