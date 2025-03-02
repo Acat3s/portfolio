@@ -43,29 +43,32 @@ nav a:hover {
 /* Éviter que le contenu ne soit masqué par la barre de navigation */
 .content {
   padding-top: 80px;
-}
-
-/* Conteneur général */
-.content {
   max-width: 800px;
   margin: 0 auto;
   padding: 50px 20px;
 }
 
-/* Projets */
+/* Grille des projets */
 .project-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
+
+/* Cards de projet */
 .project {
   background-color: #111;
-  padding: 15px;
   border-radius: 5px;
   transition: transform 0.3s;
   width: 300px;
   text-align: center;
+}
+.project a {
+  color: inherit; /* Pour que le texte reste blanc */
+  text-decoration: none;
+  display: block;
+  padding: 15px;
 }
 .project img {
   width: 100%;
@@ -77,6 +80,24 @@ nav a:hover {
 }
 .project:hover {
   transform: scale(1.05);
+}
+
+/* Lien GitHub en évidence */
+.github-link {
+  margin-top: 30px;
+  text-align: center;
+}
+.github-link a {
+  background-color: #fdbb2d;
+  color: #000;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.github-link a:hover {
+  background-color: #e0a500;
 }
 
 /* Formulaire de contact */
