@@ -8,8 +8,8 @@
 /* Corps de page */
 body {
   font-family: Arial, sans-serif;
-  background-color: #000;
-  color: #fff;
+  background-color: #000; /* Noir */
+  color: #fff;            /* Texte en blanc */
   line-height: 1.6;
 }
 
@@ -48,7 +48,7 @@ nav a:hover {
   padding: 50px 20px;
 }
 
-/* Grille des projets */
+/* Grille des projets (page index) */
 .project-container {
   display: flex;
   flex-wrap: wrap;
@@ -65,7 +65,7 @@ nav a:hover {
   text-align: center;
 }
 .project a {
-  color: inherit; /* Pour que le texte reste blanc */
+  color: inherit; /* Le texte reste blanc */
   text-decoration: none;
   display: block;
   padding: 15px;
@@ -82,7 +82,7 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* Lien GitHub en évidence */
+/* Lien GitHub en évidence (dans pages projectX.html) */
 .github-link {
   margin-top: 30px;
   text-align: center;
